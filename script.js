@@ -20,3 +20,18 @@ function makeGrid(rows){
 }
 
 makeGrid(dimension);
+
+function removeGrid() {
+    const r = document.querySelectorAll(".rowcell");
+    r.forEach((element) => {
+      element.remove();
+    });
+  }
+
+const newGrid = document.querySelector(".grid");
+newGrid.addEventListener("click", () =>{
+   let newDimension =  prompt("Add New Dimension MAX: 100");
+   removeGrid();
+   makeGrid(newDimension);
+})
+
