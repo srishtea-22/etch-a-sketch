@@ -1,14 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Seymour+One&display=swap');
 
 #container {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     border-style: solid;
     width: 550px;
     height: 550px;
 }
 #container > div{
-    border: 1px solid black;
+    border: 1px solid lightgrey;
 }
+.rowcell{
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-basis: auto;
+}
+
 .main {
     display: flex;
     flex-direction: column;
