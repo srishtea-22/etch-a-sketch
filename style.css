@@ -1,9 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Seymour+One&display=swap');
 
+body {
+    background-image: url("https://img.freepik.com/premium-vector/abstract-background-poster_1102991-12496.jpg");
+    background-size: cover;
+}
+
 #container {
     display: flex;
     flex-direction: column;
     border-style: solid;
+    background-color: white;
     width: 550px;
     height: 550px;
 }
