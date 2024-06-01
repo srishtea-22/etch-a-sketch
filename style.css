@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Seymour+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
 body {
-    background-image: url("https://img.freepik.com/premium-vector/abstract-background-poster_1102991-12496.jpg");
+    background-image: url("https://i.pinimg.com/736x/b1/67/e0/b167e054f363bf57e18b964809ece2c6.jpg");
     background-size: cover;
 }
 
@@ -13,9 +13,7 @@ body {
     width: 550px;
     height: 550px;
 }
-#container > div{
-    border: 1px solid lightgrey;
-}
+
 .rowcell{
     flex: 1;
     display: flex;
@@ -26,9 +24,24 @@ body {
 
 .main {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
     font-family: "Seymour One";
     font-size: 20px;
+}
+.btn-right, .btn-left, .sketch{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#btn {
+    margin: 10px;
+    font-size: 20px;
+    font-family: 'Lexend Deca', sans-serif;
+    border-radius: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
