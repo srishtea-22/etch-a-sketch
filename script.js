@@ -18,17 +18,10 @@ function makeGrid(rows){
 
 makeGrid(dimension);
 
-function removeGrid() {
-    const r = document.querySelectorAll(".rowcell");
-    r.forEach((element) => {
-      element.remove();
-    });
-  }
-
 const newGrid = document.querySelector(".grid");
 newGrid.addEventListener("click", () =>{
    let newDimension =  prompt("Add New Dimension MAX: 100");
-   removeGrid();
+   container.innerHTML = '';
    makeGrid(newDimension);
 })
 
@@ -37,3 +30,11 @@ container.addEventListener("mouseover", (event) => {
     event.target.style.background = "black";
   }
 });
+
+const clear = document.querySelector(".clear");
+clear.addEventListener("click", () => {
+  const cell = document.querySelectorAll(".colcell");
+  cell.forEach((element) => {
+    element.style.background = "white";
+  })
+})
