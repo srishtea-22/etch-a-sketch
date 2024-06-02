@@ -31,13 +31,22 @@ container.addEventListener("mouseover", (event) => {
   }
 });
 
+const black = document.querySelector(".black");
+black.addEventListener("click", () => {
+  container.addEventListener("mouseover", (event) => {
+    if (event.target.className === "colcell") {
+      event.target.style.background = "black";
+    }
+  });
+});
+
 const clear = document.querySelector(".clear");
 clear.addEventListener("click", () => {
   const cell = document.querySelectorAll(".colcell");
   cell.forEach((element) => {
     element.style.background = "white";
-  })
-})
+  });
+});
 
 const eraser = document.querySelector(".eraser");
 eraser.addEventListener("click", () => {
@@ -46,4 +55,4 @@ eraser.addEventListener("click", () => {
       event.target.style.background = "white";
     }
   });
-})
+});
