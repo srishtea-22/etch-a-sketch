@@ -38,3 +38,12 @@ clear.addEventListener("click", () => {
     element.style.background = "white";
   })
 })
+
+const eraser = document.querySelector(".eraser");
+eraser.addEventListener("click", () => {
+  container.addEventListener("mouseover", (event) => {
+    if (event.target.className === "colcell") {
+      event.target.style.background = "white";
+    }
+  });
+})
